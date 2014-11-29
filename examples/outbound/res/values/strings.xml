@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">outbound</string>
+
+    <!-- TwinlifeActivity -->
+    <string name="twinlife_activity_ok_button_label">OK</string>
+    
+    <!-- TwinlifeApplication -->
+    <string name="twinlife_application_wrong_configuration">Configuration incorrect</string>
+    
+    <!-- OutboundActivity -->
+    <string name="outbound_activity_calling">Calling&#8230;</string>
+    <string name="outbound_activity_on_accept">Call has been accepted</string>
+    <string name="outbound_activity_on_terminate">Call has been declined</string>
+    
+    <!-- VideoCallActivity -->
+    <string name="video_call_activity_hangup_confirmation">Do you want to hangup the call?</string>
+    <string name="video_call_activity_hangup_confirmation_yes">Yes</string>
+    <string name="video_call_activity_hangup_confirmation_no">No</string>
+    <string name="video_call_activity_terminate">Call has been terminated</string>
+    <string name="video_call_activity_terminate_success">Call has been terminated</string>
+ 
+</resources>

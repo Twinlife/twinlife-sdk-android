@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/video_call_activity_root_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000" >
+
+    <RelativeLayout
+        android:id="@+id/video_call_activity_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/leftbar"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="@color/black_overlay"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/video_call_activity_micro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/micro_off" />
+
+        <ImageButton
+            android:id="@+id/video_call_activity_mute_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/camera_off" />
+
+        <Button
+            android:id="@+id/video_call_activity_hang_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/hangup"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rightbar"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@color/black_overlay"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/video_call_activity_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@null"
+            android:src="@drawable/ic_switch_video_facing" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="+"
+            android:textColor="@android:color/white"
+            android:textSize="35sp"
+            android:translationY="-10dp" />
+
+        <SeekBar
+            android:id="@+id/video_call_activity_camera_zoom"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="120dp"
+            android:rotation="270"
+            android:translationX="-65dp"
+            android:translationY="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:text="-"
+            android:textColor="@android:color/white"
+            android:textSize="50sp"
+            android:translationY="-10dp" />
+    </LinearLayout>
+
+</FrameLayout>
