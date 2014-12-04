@@ -21,16 +21,10 @@ public class BlueprintConfiguration extends TwinlifeConfiguration {
 	private static final String SERVICE_ID = "14f65898-fc2d-4a84-a446-a8f7e15094a4";
 	private static final String APPLICATION_ID = "f2081245-0fed-4255-b10f-2418107ccb06";
 
-	private static final String SERVER_NAME = "developers.twinlife-systems.com";
-	private static final String SERVER_URL = "ws.developers.twinlife-systems.com";
-
 	BlueprintConfiguration(TwinlifeApplicationImpl twinlifeApplication) {
 
 		serviceId = SERVICE_ID;
 		applicationId = APPLICATION_ID;
-
-		serverName = SERVER_NAME;
-		serverUrl = SERVER_URL;
 
 		isRestartable = false;
 
